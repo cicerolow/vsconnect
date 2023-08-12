@@ -8,6 +8,9 @@ import imgLinkedin from "../../assets/imagens/linkedin.svg";
 //estilizacao
 import "./style.css";
 
+//rotas
+import { Link } from "react-router-dom";
+
 function Footer() {
     return (
         //codigo do footer
@@ -36,16 +39,17 @@ function Footer() {
                     <div className="rodape_conteudo_contatos">
                         <h2>Contatos</h2>
                         <div>
-                            <a href="#"><img src={imgFacebook} alt="" /></a>
-                            <a href="#"><img src={imgInstagram} alt="" /></a>
-                            <a href="#"><img src={imgLinkedin} alt="" /></a>
+                            <Link to={"/"}><img src={imgFacebook} alt="" /></Link>
+                            <Link to={"/"}><img src={imgInstagram} alt="" /></Link>
+                            <Link to={"/"}><img src={imgLinkedin} alt="" /></Link>
                         </div>
+                        <Link to={"mailto:"}>contato@vsconnect.com</Link>
                         <a href="mailto:">contato@vsconnect.com</a>
                     </div>
                 </div>
                 <p>todos os direitos reservados ©.</p>
             </div>
-        </footer>       
+        </footer>
     );
 
 }
