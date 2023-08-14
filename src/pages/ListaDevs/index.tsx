@@ -59,15 +59,9 @@ function ListaDevs() {
           </form>
           <div className="wrapper_lista">
             <ul>
-              <li>
-                <div>
-                </div>
-              </li>
-              <li>
-
-              </li>
-              <li>
-              </li>
+              {
+                
+              }
             </ul>
           </div>
         </div>
