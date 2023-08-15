@@ -31,6 +31,7 @@ function Footer() {
                             <li>Login</li>
                             <li>Home</li>
                             <li>Listar Serviços</li>
+                            <li>Listar Desenvolvedores</li>
                             <li>Cadastrar Cliente</li>
                             <li>Cadastrar Desenvolvedor</li>
                         </ul>

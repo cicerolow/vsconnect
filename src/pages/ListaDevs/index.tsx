@@ -60,7 +60,16 @@ function ListaDevs() {
           <div className="wrapper_lista">
             <ul>
               {
-                
+                devs.map((dev: any, indice: number) => {
+                  return <li key={indice}>
+                    <CardDev
+                      foto={dev.img_perfil}
+                      nome={dev.nome}
+                      email={dev.email}
+                      listaTechs={dev.skills}
+                    />
+                  </li>
+                })
               }
             </ul>
           </div>
